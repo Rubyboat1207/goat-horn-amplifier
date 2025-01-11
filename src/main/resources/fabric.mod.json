@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "goat-horn-speech-amplifier",
+	"version": "${version}",
+	"name": "Goat Horn Speech Amplifier",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/goat-horn-speech-amplifier/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.rubyboat.goathorn.GoatHornSpeechAmplifier"
+		]
+	},
+	"mixins": [
+		"goat-horn-speech-amplifier.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"simple-voice-chat": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
