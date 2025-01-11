@@ -27,7 +27,7 @@
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*",
-		"simple-voice-chat": "*"
+		"voicechat": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

@@ -8,7 +8,7 @@ import net.minecraft.world.GameRules;
 
 public class GoatHornSpeechAmplifier implements ModInitializer {
 	public static final GameRules.Key<GameRules.IntRule> GOAT_HORN_AMPLIFIER =
-			GameRuleRegistry.register("goatHornAmplifier", GameRules.Category.PLAYER, GameRuleFactory.createIntRule(3, 1, Integer.MAX_VALUE));
+			GameRuleRegistry.register("goatHornAmplifierPercent", GameRules.Category.PLAYER, GameRuleFactory.createIntRule(300, 100, Integer.MAX_VALUE));
 
 	@Override
 	public void onInitialize() { }

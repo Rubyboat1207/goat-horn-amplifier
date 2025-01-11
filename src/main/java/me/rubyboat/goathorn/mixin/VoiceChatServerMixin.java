@@ -18,7 +18,7 @@ public class VoiceChatServerMixin {
     @ModifyVariable(method = "processProximityPacket", at = @At("STORE"), ordinal = 3)
     private float modifyMultiplier(float multiplier, @Local(argsOnly = true) ServerPlayerEntity sender) {
         if(sender.getStackInHand(Hand.MAIN_HAND).isOf(Items.GOAT_HORN) || sender.getStackInHand(Hand.OFF_HAND).isOf(Items.GOAT_HORN)) {
-            return multiplier * sender.server.getGameRules().getInt(GoatHornSpeechAmplifier.GOAT_HORN_AMPLIFIER);
+            return multiplier * (sender.server.getGameRules().getInt(GoatHornSpeechAmplifier.GOAT_HORN_AMPLIFIER) / 100f);
         }
         return multiplier;
     }
